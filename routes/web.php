@@ -18,5 +18,12 @@ Route::get('/', function () {
 });
 
 Route::get('/hellolaravel', function () {
-     return 'Hello Laravel';
+    $felhasznalonev = "Andris";
+
+     return view ('hello', [
+        'name' => $felhasznalonev
+     ]);
 });
+
+
+
